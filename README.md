@@ -1,0 +1,1 @@
+# specinfra-backend-local_ruby
