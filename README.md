@@ -1,8 +1,12 @@
 # Specinfra::Backend::LocalRuby
+Specinfra backend for local using Ruby.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/specinfra/backend/local_ruby`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+## Motivation
+[specinfra](https://github.com/mizzy/specinfra) has Specinfra::Backend::Exec
+backend for local executions.  However, it could be slow more than necessary
+because it spawns many short processes.
+Specinfra::Backend::LocalRuby aims at a faster replacement for
+Specinfra::Backend::Exec by using Ruby methods rather than external commands.
 
 ## Installation
 
@@ -32,7 +36,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/specinfra-backend-local_ruby.
+Bug reports and pull requests are welcome on GitHub at https://github.com/eagletmt/specinfra-backend-local_ruby.
 
 
 ## License
